@@ -111,7 +111,43 @@
     </div>
 
     <div class="product">
-        <%= render partial: 'checkouts/offers/ty_page_offer_upsell/product' %>
+        <div class="product__head flex flex--between align--center">
+            <div class="product-head flex flex--between">
+                <div class="product-head__image"></div>
+                <div class="flex align--center">
+                    <div>
+                        <p class="product-head__headline">Toaster</p>
+                        <p class="product-head__label">Silver</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="product__price">$11.95</p>
+            </div>
+        </div>
+        <div class="product__main">
+            <ul class="list-holder">
+                <li class="flex flex--between">
+                    <p class="product__info">Subtotal</p>
+                    <p class="product__price">$11.95</p>
+                </li>
+                <li class="flex flex--between">
+                    <p class="product__info">Shipping</p>
+                    <p class="product__price">$5.95</p>
+                </li>
+                <li class="flex flex--between">
+                    <p class="product__info">Taxes</p>
+                    <p class="product__price">$1.62</p>
+                </li>
+            </ul>
+        </div>
+        <div class="product__bottom flex flex--between">
+            <div class="product__price--sm">Total</div>
+            <div class="flex align--center">
+                <span class="product__price--label">USD</span>
+                <p class="product__price product__price--lg">$19.52</p>
+            </div>
+        </div>
     </div>
 </div>
 

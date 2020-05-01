@@ -594,6 +594,16 @@ template {
 .offset-left--sm {
   margin-left: 15px; }
 
+p {
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    padding: 0;
+    margin: 0; }
+
 .order-card {
   border-radius: 3px;
   border: solid 0.8px #d9d9d9; }
@@ -798,3 +808,68 @@ template {
     padding: 16px 25px;
     font-size: 10.6px;
     font-weight: 500; }
+
+.product {
+  padding: 35px 25px 0 35px; }
+  .product__price, .product__info {
+    font-size: 10.6px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #323131;
+    margin: 0; }
+  .product .list-holder li:nth-child(even) {
+    margin: 10px 0; }
+  .product__price {
+    font-weight: 600; }
+    .product__price--sm {
+      font-size: 12.9px; }
+    .product__price--lg {
+      font-size: 16.7px; }
+    .product__price--label {
+      font-size: 9.1px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #706e6e;
+      padding-right: 5px; }
+  .product__info {
+    font-weight: normal;
+    color: #4b4849; }
+  .product__head {
+    padding-bottom: 25px; }
+  .product__main {
+    border-top: solid 0.5px #d9d9d9;
+    border-bottom: solid 0.5px #d9d9d9;
+    padding: 25px 0; }
+  .product__bottom {
+    padding-top: 25px; }
+  .product .product-head__image {
+    border-radius: 3px;
+    border: solid 0.8px #d6cfcf;
+    background-color: #ffffff;
+    width: 49px;
+    height: 49px; }
+  .product .product-head__headline {
+    font-size: 10.6px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: right;
+    color: #414040;
+    margin: 0 0 0 8px; }
+  .product .product-head__label {
+    font-size: 9.1px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #706e6e;
+    margin: 0 0 0 8px; }
