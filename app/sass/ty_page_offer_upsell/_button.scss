@@ -1,0 +1,17 @@
+.button {
+	border-radius: 3px;
+	background-color: $color-b250;
+	color: #ffffff;
+	font-size: 10px;
+	
+	&--main {
+		padding: 9px 16px;
+		font-size: 12.2px;
+	}
+	
+	&--submit {
+		padding: 16px 25px;
+		font-size: 10.6px;
+		font-weight: 500;
+	}
+}

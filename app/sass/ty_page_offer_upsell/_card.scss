@@ -37,6 +37,11 @@
 	
 	&__content {
 		padding: 13px;
+		
+		&--border {
+			border-top: solid 1px #d9d9d9;
+			border-bottom: solid 1px #d9d9d9;
+		}
 	}
 	
 	.card-content {
@@ -59,6 +64,107 @@
 			&:nth-last-child(-n+2){
 				margin-top: 16px;
 			}
+		}
+	}
+	
+	&__timer {
+		font-size: 16.7px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.18;
+		letter-spacing: normal;
+		text-align: right;
+		color: #e60c14;
+	}
+	
+	.info {
+		&__image {
+			width: 67px;
+			height: 67px;
+			border-radius: 3px;
+			border: solid 0.8px #d6cfcf;
+		}
+		
+		&__label {
+			font-family: Arial;
+			font-size: 10.6px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.14;
+			letter-spacing: normal;
+			color: #3b3b3b;
+			margin-bottom: 4px;
+		}
+		
+		&__select {
+			border-radius: 1.5px;
+			border: solid 0.8px #d8d8d8;
+			background: transparent;
+			font-size: 10.6px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #424242;
+			padding: 4px;
+			//background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+			//-webkit-appearance: none;
+		}
+		
+		&__headline--lg {
+			font-family: Arial;
+			font-size: 15.2px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #393838;
+			margin: 0;
+		}
+	}
+	
+	.price-block {
+		&__main {
+			font-family: Arial;
+			font-size: 16.7px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.18;
+			letter-spacing: normal;
+			text-align: right;
+			color: $color-b250;
+		}
+		
+		&__old {
+			font-size: 10.6px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.43;
+			letter-spacing: normal;
+			text-align: right;
+			color: #393838;
+			text-decoration: line-through;
+		}
+		
+		&__discount {
+			font-family: Arial;
+			border-radius: 3px;
+			border: solid 0.8px $color-b250;
+			font-size: 10.6px;
+			font-weight: bold;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.43;
+			letter-spacing: normal;
+			color: $color-b250;
+			text-align: center;
+			padding: 3px 6px;
 		}
 	}
 }

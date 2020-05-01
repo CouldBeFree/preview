@@ -485,8 +485,7 @@ template {
 
 .flex--between {
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  justify-content: space-between; }
 
 .flex--top--between {
   display: flex;
@@ -550,6 +549,9 @@ template {
 
 .offset-bottom--sm {
   margin-bottom: 15px; }
+
+.offset-left--sm {
+  margin-left: 15px; }
 
 .order-card {
   border-radius: 3px;
@@ -644,6 +646,9 @@ template {
     background-image: url("../../img/map.png"); }
   .card__content {
     padding: 13px; }
+    .card__content--border {
+      border-top: solid 1px #d9d9d9;
+      border-bottom: solid 1px #d9d9d9; }
   .card .card-content__item {
     flex-basis: 50%; }
   .card .card-content__headline {
@@ -659,3 +664,82 @@ template {
     margin-top: 12px; }
     .card .card-content__headline:nth-last-child(-n+2) {
       margin-top: 16px; }
+  .card__timer {
+    font-size: 16.7px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: right;
+    color: #e60c14; }
+  .card .info__image {
+    width: 67px;
+    height: 67px;
+    border-radius: 3px;
+    border: solid 0.8px #d6cfcf; }
+  .card .info__label {
+    font-family: Arial;
+    font-size: 10.6px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: #3b3b3b;
+    margin-bottom: 4px; }
+  .card .info__select {
+    border-radius: 1.5px;
+    border: solid 0.8px #d8d8d8;
+    background: transparent;
+    font-size: 10.6px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #424242;
+    padding: 4px; }
+  .card .info__headline--lg {
+    font-family: Arial;
+    font-size: 15.2px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #393838;
+    margin: 0; }
+  .card .price-block__main {
+    font-family: Arial;
+    font-size: 16.7px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.18;
+    letter-spacing: normal;
+    text-align: right;
+    color: #4476d2; }
+  .card .price-block__old {
+    font-size: 10.6px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: right;
+    color: #393838;
+    text-decoration: line-through; }
+  .card .price-block__discount {
+    font-family: Arial;
+    border-radius: 3px;
+    border: solid 0.8px #4476d2;
+    font-size: 10.6px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    color: #4476d2;
+    text-align: center;
+    padding: 3px 6px; }
