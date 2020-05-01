@@ -1,0 +1,108 @@
+body {
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.header-banner {
+  font-family: $main-font;
+
+  .container {
+    padding: 0 1em;
+
+    @media(min-width: 1000px) {
+      padding: 0 5%;
+      max-width: 1575px;
+      margin: 0 auto;
+    }
+
+    //@media(max-width: 1441px) {
+    //  max-width: 940px;
+    //}
+
+    @media(max-width: 1000px) {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+  }
+  
+  .logo__text {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .themes_header_logo {
+    display: block;
+  }
+}
+
+.ocu-header {
+  border-bottom: 1px solid #BEBEBE;
+  background-size: cover;
+  background-color: #333;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 6em 0 2em;
+}
+
+.ocu-header__title {
+  color: #333;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+
+.ocu-header__link {
+  text-decoration: none;
+  display: block;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+.ocu-header__image {
+  display: inline-block;
+}
+
+.ocu-header__image--small {
+  max-height: 2.14286em;
+}
+
+.ocu-header__image--medium {
+  max-height: 2.85714em;
+}
+
+.ocu-header__image--large {
+  max-height: 3.57143em;
+}
+
+@media (min-width: 1000px) {
+
+  .ocu-header__image--small {
+    max-height: 2.85714em;
+  }
+
+  .ocu-header__image--medium {
+    max-height: 4.28571em;
+  }
+
+  .ocu-header__image--large {
+    max-height: 5.71429em;
+  }
+}
+
+
+.ocu-header--center {
+  text-align: center;
+}
+
+.ocu-header--left {
+  text-align: left;
+}
+
+.ocu-header--right {
+  text-align: right;
+}

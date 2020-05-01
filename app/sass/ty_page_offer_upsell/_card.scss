@@ -1,0 +1,53 @@
+.card {
+	border-radius: 3px;
+	border: solid 0.8px #d9d9d9;
+	
+	&__headline--lg {
+		font-family: Arial;
+		font-size: 15.2px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #393838;
+		margin: 0;
+	}
+	
+	&__headline--sm {
+		font-family: SFProDisplay;
+		font-size: 14.5px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #323131;
+		margin: 0;
+	}
+	
+	&__headline--xs {
+		font-family: SFProDisplay;
+		font-size: 10.6px;
+		font-weight: 500;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #323131;
+		margin: 0;
+	}
+	
+	&__image {
+		height: 100vh;
+		max-height: 160px;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url('../../img/map.png');
+	}
+	
+	&__content {
+		padding: 13px;
+	}
+}

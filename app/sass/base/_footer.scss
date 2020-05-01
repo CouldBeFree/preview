@@ -1,0 +1,28 @@
+.ocu-footer {
+  background-color: $white;
+  font-family: $main-font;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $gray-150;
+  color: $gray-600;
+  padding: 14px 0;
+}
+
+.ocu-footer__border {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $gray-250;
+}
+
+.ocu-footer__custom-html {
+  margin: 20px 20px 0;
+  text-align: center;
+}
+
+.ocu-footer__copyright {
+  margin: 20px 60px 10px;
+  font-size: 12px;
+  color: #999;
+}

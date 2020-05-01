@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="wrap flex">
+    <div class="main">
+        <div class="head offset-bottom--xl">
+            <h1 class="head__headline offset-bottom--xm">Store Name</h1>
+            <span class="head__label">Order #1001</span>
+            <h4 class="head__subheadline">Thank you John!</h4>
+            <!--Main-->
+        </div>
+
+        <!-- Image card -->
+        <div class="card">
+            <div class="card__image"></div>
+            <div class="card__content">
+                <h4 class="card__headline--sm">Your order is confirmed</h4>
+                <div class="bar" data-width="50"></div>
+            </div>
+        </div>
+
+        <!-- Order updates -->
+
+
+    </div>
+
+    <div class="product">
+        <%= render partial: 'checkouts/offers/ty_page_offer_upsell/product' %>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
