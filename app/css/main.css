@@ -460,6 +460,9 @@ template {
 .flex {
   display: flex; }
 
+.wrap {
+  flex-wrap: wrap; }
+
 .flex--start {
   display: flex;
   justify-content: flex-start;
@@ -541,6 +544,12 @@ template {
 
 .wrap {
   justify-content: space-between; }
+
+.offset-bottom--xs {
+  margin-bottom: 12px; }
+
+.offset-bottom--sm {
+  margin-bottom: 15px; }
 
 .order-card {
   border-radius: 3px;
@@ -626,16 +635,6 @@ template {
     letter-spacing: normal;
     color: #323131;
     margin: 0; }
-  .card__headline--xs {
-    font-family: SFProDisplay;
-    font-size: 10.6px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #323131;
-    margin: 0; }
   .card__image {
     height: 100vh;
     max-height: 160px;
@@ -645,3 +644,18 @@ template {
     background-image: url("../../img/map.png"); }
   .card__content {
     padding: 13px; }
+  .card .card-content__item {
+    flex-basis: 50%; }
+  .card .card-content__headline {
+    font-family: SFProDisplay;
+    font-size: 10.6px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #323131;
+    margin-bottom: 8px;
+    margin-top: 12px; }
+    .card .card-content__headline:nth-last-child(-n+2) {
+      margin-top: 16px; }

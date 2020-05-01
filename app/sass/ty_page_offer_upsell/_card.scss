@@ -26,18 +26,6 @@
 		margin: 0;
 	}
 	
-	&__headline--xs {
-		font-family: SFProDisplay;
-		font-size: 10.6px;
-		font-weight: 500;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: #323131;
-		margin: 0;
-	}
-	
 	&__image {
 		height: 100vh;
 		max-height: 160px;
@@ -49,5 +37,28 @@
 	
 	&__content {
 		padding: 13px;
+	}
+	
+	.card-content {
+		&__item {
+			flex-basis: 50%;
+		}
+		
+		&__headline {
+			font-family: SFProDisplay;
+			font-size: 10.6px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			color: #323131;
+			margin-bottom: 8px;
+			margin-top: 12px;
+			
+			&:nth-last-child(-n+2){
+				margin-top: 16px;
+			}
+		}
 	}
 }
