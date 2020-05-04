@@ -1,30 +1,61 @@
 .head {
-    &__headline, &__label, &__subheadline {
-        font-weight: normal;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
-	      margin: 0;
-	      font-family: $secondary-font;
-    }
-
-    &__headline {
-        font-size: 22.8px;
-        color: #323131;
-        margin-bottom: 15px;
-	      font-weight: normal;
-    }
-
-    &__label {
-        font-size: 11.4px;
-        color: #5e5b5b;
-        padding-bottom: 6px;
-    }
-
-    &__subheadline {
-        font-size: 18.3px;
-        color: #414040;
-        margin-top: 5px;
-    }
+	
+	&__headline, &__label, &__subheadline {
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		margin: 0;
+		font-family: $secondary-font;
+	}
+	
+	&__headline {
+		font-size: 22.8px;
+		color: #323131;
+		margin-bottom: 15px;
+		font-weight: normal;
+		
+		@media (max-width: 576px) {
+			display: none;
+		}
+	}
+	
+	&__label {
+		font-size: 11.4px;
+		color: #5e5b5b;
+		padding-bottom: 6px;
+	}
+	
+	&__subheadline {
+		font-size: 18.3px;
+		color: #414040;
+		margin-top: 5px;
+	}
+	
+	.inner-wrap {
+		position: relative;
+		
+		&:after{
+			content: '';
+			position: absolute;
+			display: block;
+			width: 37px;
+			height: 37px;
+			color: #4476d2;
+			bottom: 5px;
+			left: -50px;
+			background-color: #4476d2;
+			-webkit-mask-image: url('../../img/TY_tick.svg');
+			mask-image: url('../../img/TY_tick.svg');
+			
+			@media (max-width: 768px) {
+				left: 0;
+			}
+		}
+		
+		@media (max-width: 768px) {
+			padding-left: 50px;
+		}
+	}
 }

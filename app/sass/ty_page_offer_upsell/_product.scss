@@ -1,6 +1,18 @@
 .product {
 	padding: 35px 25px 0 35px;
 	
+	@media (max-width: 992px) {
+		padding: 20px 20px 0 20px;
+	}
+	
+	@media (max-width: 768px) {
+		padding: 15px;
+	}
+	
+	@media (max-width: 576px) {
+		padding-bottom: 0;
+	}
+	
 	&__price, &__info {
 		font-size: 10.6px;
 		font-stretch: normal;
@@ -54,16 +66,40 @@
 	&__head {
 		padding-bottom: 25px;
 		font-family: $secondary-font;
+		
+		@media (max-width: 992px) {
+			padding-bottom: 15px;
+		}
+		
+		@media (max-width: 576px) {
+			display: none;
+		}
 	}
 	
 	&__main {
 		border-top: solid 0.5px #d9d9d9;
 		border-bottom: solid 0.5px #d9d9d9;
 		padding: 25px 0;
+		
+		@media (max-width: 992px) {
+			padding: 15px 0;
+		}
+		
+		@media (max-width: 576px) {
+			display: none;
+		}
 	}
 	
 	&__bottom {
 		padding-top: 25px;
+		
+		@media (max-width: 992px) {
+			padding-top: 15px;
+		}
+		
+		@media (max-width: 576px) {
+			display: none;
+		}
 	}
 	
 	.product-head {
@@ -99,6 +135,24 @@
 			color: #706e6e;
 			margin: 0 0 0 8px;
 			font-family: $secondary-font;
+		}
+	}
+	
+	&__headline {
+		display: none;
+		font-family: $secondary-font;
+		font-size: 22.8px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: normal;
+		letter-spacing: normal;
+		color: #323131;
+		text-align: center;
+		
+		@media (max-width: 576px) {
+			display: block;
+			margin: 0;
 		}
 	}
 }
