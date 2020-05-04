@@ -1,19 +1,31 @@
+body {
+	background: #fff;
+}
+
 .main {
-    flex-basis: 60%;
-    padding: 15px 50px 30px 75px;
-    border-right: 1px solid #dfe3e8;
+	flex-basis: 60%;
+	padding: 15px 50px 30px 75px;
+	border-right: 1px solid #dfe3e8;
 }
 
 .product {
-    flex-basis: 40%;
+	flex-basis: 40%;
 }
 
 .wrap {
-    justify-content: space-between;
+	justify-content: space-between;
+}
+
+.offset-top-xs {
+	margin-top: 12px;
 }
 
 .offset-bottom--xs {
 	margin-bottom: 12px;
+}
+
+.offset-bottom--xl {
+	margin-bottom: 25px;
 }
 
 .offset-bottom--sm {

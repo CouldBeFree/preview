@@ -10,6 +10,7 @@
 		text-align: right;
 		color: #323131;
 		margin: 0;
+		font-family: $secondary-font;
 	}
 	
 	.list-holder {
@@ -20,13 +21,16 @@
 	
 	&__price {
 		font-weight: 600;
+		font-family: $secondary-font;
 		
 		&--sm {
 			font-size: 12.9px;
+			font-family: $secondary-font;
 		}
 		
 		&--lg {
 			font-size: 16.7px;
+			font-family: $secondary-font;
 		}
 		
 		&--label {
@@ -38,6 +42,7 @@
 			letter-spacing: normal;
 			color: #706e6e;
 			padding-right: 5px;
+			font-family: $secondary-font;
 		}
 	}
 	
@@ -48,6 +53,7 @@
 	
 	&__head {
 		padding-bottom: 25px;
+		font-family: $secondary-font;
 	}
 	
 	&__main {
@@ -80,6 +86,7 @@
 			text-align: right;
 			color: #414040;
 			margin: 0 0 0 8px;
+			font-family: $secondary-font;
 		}
 		
 		&__label {
@@ -91,6 +98,7 @@
 			letter-spacing: normal;
 			color: #706e6e;
 			margin: 0 0 0 8px;
+			font-family: $secondary-font;
 		}
 	}
 }

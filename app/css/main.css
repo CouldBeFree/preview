@@ -337,9 +337,6 @@ template {
   display: flex;
   align-self: center; }
 
-.offset-bottom--sm {
-  margin-bottom: 10px; }
-
 .offset-bottom--md {
   margin-bottom: 15px; }
 
@@ -574,6 +571,9 @@ template {
   background-color: #d9d9d9;
   margin-top: 5px; }
 
+body {
+  background: #fff; }
+
 .main {
   flex-basis: 60%;
   padding: 15px 50px 30px 75px;
@@ -585,8 +585,14 @@ template {
 .wrap {
   justify-content: space-between; }
 
+.offset-top-xs {
+  margin-top: 12px; }
+
 .offset-bottom--xs {
   margin-bottom: 12px; }
+
+.offset-bottom--xl {
+  margin-bottom: 25px; }
 
 .offset-bottom--sm {
   margin-bottom: 15px; }
@@ -604,72 +610,11 @@ ul {
     padding: 0;
     margin: 0; }
 
-.order-card {
-  border-radius: 3px;
-  border: solid 0.8px #d9d9d9; }
-  .order-card__headline {
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal; }
-
-.offer-card {
-  border-radius: 3px;
-  border: solid 0.8px #d9d9d9; }
-
-.image-card {
-  border-radius: 3px;
-  border: solid 0.8px #d9d9d9; }
-  .image-card__image {
-    height: 100vh;
-    max-height: 160px;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover; }
-
-.content__text {
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal; }
-
-.head__headline {
-  margin-top: 0;
-  font-size: 22.8px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #323131;
-  margin-bottom: 5px; }
-
-.head__label {
-  font-size: 11.4px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #5e5b5b; }
-
-.head__subheadline {
-  font-size: 18.3px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #414040;
-  margin-top: 6px; }
-
 .card {
   border-radius: 3px;
   border: solid 0.8px #d9d9d9; }
   .card__headline--lg {
-    font-family: Arial;
+    font-family: "Arial", sans-serif;
     font-size: 15.2px;
     font-weight: bold;
     font-stretch: normal;
@@ -679,7 +624,7 @@ ul {
     color: #393838;
     margin: 0; }
   .card__headline--sm {
-    font-family: SFProDisplay;
+    font-family: "SFProDisplay", "sans-serif";
     font-size: 14.5px;
     font-weight: normal;
     font-stretch: normal;
@@ -703,7 +648,7 @@ ul {
   .card .card-content__item {
     flex-basis: 50%; }
   .card .card-content__headline {
-    font-family: SFProDisplay;
+    font-family: "SFProDisplay", "sans-serif";
     font-size: 10.6px;
     font-weight: 500;
     font-stretch: normal;
@@ -723,14 +668,15 @@ ul {
     line-height: 1.18;
     letter-spacing: normal;
     text-align: right;
-    color: #e60c14; }
+    color: #e60c14;
+    font-family: "Arial", sans-serif; }
   .card .info__image {
     width: 67px;
     height: 67px;
     border-radius: 3px;
     border: solid 0.8px #d6cfcf; }
   .card .info__label {
-    font-family: Arial;
+    font-family: "Arial", sans-serif;
     font-size: 10.6px;
     font-weight: normal;
     font-stretch: normal;
@@ -750,9 +696,10 @@ ul {
     line-height: normal;
     letter-spacing: normal;
     color: #424242;
-    padding: 4px; }
+    padding: 4px;
+    font-family: "Arial", sans-serif; }
   .card .info__headline--lg {
-    font-family: Arial;
+    font-family: "Arial", sans-serif;
     font-size: 15.2px;
     font-weight: bold;
     font-stretch: normal;
@@ -762,7 +709,7 @@ ul {
     color: #393838;
     margin: 0; }
   .card .price-block__main {
-    font-family: Arial;
+    font-family: "Arial", sans-serif;
     font-size: 16.7px;
     font-weight: bold;
     font-stretch: normal;
@@ -780,9 +727,10 @@ ul {
     letter-spacing: normal;
     text-align: right;
     color: #393838;
-    text-decoration: line-through; }
+    text-decoration: line-through;
+    font-family: "Arial", sans-serif; }
   .card .price-block__discount {
-    font-family: Arial;
+    font-family: "Arial", sans-serif;
     border-radius: 3px;
     border: solid 0.8px #4476d2;
     font-size: 10.6px;
@@ -819,15 +767,19 @@ ul {
     letter-spacing: normal;
     text-align: right;
     color: #323131;
-    margin: 0; }
+    margin: 0;
+    font-family: "SFProDisplay", "sans-serif"; }
   .product .list-holder li:nth-child(even) {
     margin: 10px 0; }
   .product__price {
-    font-weight: 600; }
+    font-weight: 600;
+    font-family: "SFProDisplay", "sans-serif"; }
     .product__price--sm {
-      font-size: 12.9px; }
+      font-size: 12.9px;
+      font-family: "SFProDisplay", "sans-serif"; }
     .product__price--lg {
-      font-size: 16.7px; }
+      font-size: 16.7px;
+      font-family: "SFProDisplay", "sans-serif"; }
     .product__price--label {
       font-size: 9.1px;
       font-weight: normal;
@@ -836,12 +788,14 @@ ul {
       line-height: normal;
       letter-spacing: normal;
       color: #706e6e;
-      padding-right: 5px; }
+      padding-right: 5px;
+      font-family: "SFProDisplay", "sans-serif"; }
   .product__info {
     font-weight: normal;
     color: #4b4849; }
   .product__head {
-    padding-bottom: 25px; }
+    padding-bottom: 25px;
+    font-family: "SFProDisplay", "sans-serif"; }
   .product__main {
     border-top: solid 0.5px #d9d9d9;
     border-bottom: solid 0.5px #d9d9d9;
@@ -863,7 +817,8 @@ ul {
     letter-spacing: normal;
     text-align: right;
     color: #414040;
-    margin: 0 0 0 8px; }
+    margin: 0 0 0 8px;
+    font-family: "SFProDisplay", "sans-serif"; }
   .product .product-head__label {
     font-size: 9.1px;
     font-weight: normal;
@@ -872,4 +827,30 @@ ul {
     line-height: normal;
     letter-spacing: normal;
     color: #706e6e;
-    margin: 0 0 0 8px; }
+    margin: 0 0 0 8px;
+    font-family: "SFProDisplay", "sans-serif"; }
+
+.head__headline, .head__label, .head__subheadline {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  margin: 0;
+  font-family: "SFProDisplay", "sans-serif"; }
+
+.head__headline {
+  font-size: 22.8px;
+  color: #323131;
+  margin-bottom: 15px;
+  font-weight: normal; }
+
+.head__label {
+  font-size: 11.4px;
+  color: #5e5b5b;
+  padding-bottom: 6px; }
+
+.head__subheadline {
+  font-size: 18.3px;
+  color: #414040;
+  margin-top: 5px; }

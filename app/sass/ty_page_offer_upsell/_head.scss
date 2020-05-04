@@ -1,34 +1,30 @@
 .head {
-	&__headline {
-		margin-top: 0;
-		font-size: 22.8px;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: #323131;
-		margin-bottom: 5px;
-	}
-	
-	&__label {
-		font-size: 11.4px;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: #5e5b5b;
-	}
-	
-	&__subheadline {
-		font-size: 18.3px;
-		font-weight: normal;
-		font-stretch: normal;
-		font-style: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		color: #414040;
-		margin-top: 6px;
-	}
+    &__headline, &__label, &__subheadline {
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+	      margin: 0;
+	      font-family: $secondary-font;
+    }
+
+    &__headline {
+        font-size: 22.8px;
+        color: #323131;
+        margin-bottom: 15px;
+	      font-weight: normal;
+    }
+
+    &__label {
+        font-size: 11.4px;
+        color: #5e5b5b;
+        padding-bottom: 6px;
+    }
+
+    &__subheadline {
+        font-size: 18.3px;
+        color: #414040;
+        margin-top: 5px;
+    }
 }
