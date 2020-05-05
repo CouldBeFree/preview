@@ -52,6 +52,14 @@ body {
 	margin-left: 15px;
 }
 
+.active {
+	display: block!important;
+}
+
+.open {
+	transform: rotate(180deg);
+}
+
 p {
 	margin: 0;
 }
