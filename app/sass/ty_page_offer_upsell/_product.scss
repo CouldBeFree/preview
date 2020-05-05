@@ -17,7 +17,6 @@
 		@media (max-width: 576px) {
 			display: none;
 			background: #fafafa;
-			//padding-top: 15px;
 			padding: 15px 15px 0 15px;
 		}
 	}
@@ -182,5 +181,19 @@
 			display: block;
 			margin-top: 0;
 		}
+	}
+	
+	&__radio {
+		&:checked ~ .product-mobile {
+			display: block;
+		}
+		
+		&:checked ~ .toggleCollapse .mobile__icon--arrow {
+			transform: rotate(180deg);
+		}
+	}
+	
+	.product__radio {
+		display: none;
 	}
 }

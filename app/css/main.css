@@ -878,6 +878,12 @@ template {
       .product__headline {
         display: block;
         margin-top: 0; } }
+  .product__radio:checked ~ .product-mobile {
+    display: block; }
+  .product__radio:checked ~ .toggleCollapse .mobile__icon--arrow {
+    transform: rotate(180deg); }
+  .product .product__radio {
+    display: none; }
 
 .head__headline, .head__label, .head__subheadline {
   font-weight: normal;

@@ -7,11 +7,11 @@ nodesArray.forEach((item) => {
 	item.style.width = `${width}%`;
 })
 
-const toggler = document.getElementById('toggle');
+/*const toggler = document.getElementById('toggle');
 const target = document.getElementById('target');
 const targetIcon = document.getElementById('target-icon');
 
 toggler.addEventListener('click', function () {
 	target.classList.toggle('active');
 	targetIcon.classList.toggle('open');
-})
+})*/
