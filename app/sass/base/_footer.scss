@@ -28,6 +28,12 @@
 }
 
 .footer {
+	@media (max-width: 414px) {
+		flex-direction: column-reverse;
+		padding-bottom: 15px;
+		border-bottom: solid 1px #d9d9d9;
+	}
+	
 	&__label, &__link {
 		font-size: 10.6px;
 		font-weight: normal;

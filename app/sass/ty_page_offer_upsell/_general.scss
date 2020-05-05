@@ -52,12 +52,28 @@ body {
 	margin-left: 15px;
 }
 
+.offset-left--xxs {
+	margin-left: 5px;
+}
+
+.offset-top-xxs {
+	margin-top: 5px;
+}
+
+.offset-bottom-xxs {
+	margin-bottom: 5px;
+}
+
 .active {
-	display: block!important;
+	display: block !important;
 }
 
 .open {
 	transform: rotate(180deg);
+}
+
+.text-left {
+	text-align: left !important;
 }
 
 p {

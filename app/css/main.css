@@ -549,6 +549,12 @@ template {
   font-size: 12px;
   color: #999; }
 
+@media (max-width: 414px) {
+  .footer {
+    flex-direction: column-reverse;
+    padding-bottom: 15px;
+    border-bottom: solid 1px #d9d9d9; } }
+
 .footer__label, .footer__link {
   font-size: 10.6px;
   font-weight: normal;
@@ -571,63 +577,6 @@ template {
   background-color: #d9d9d9;
   margin-top: 5px; }
 
-body {
-  background: #fff; }
-
-.main {
-  flex-basis: 60%;
-  padding: 15px 50px 30px 75px;
-  border-right: 1px solid #dfe3e8; }
-  @media (max-width: 992px) {
-    .main {
-      padding: 15px 25px 30px 60px; } }
-  @media (max-width: 768px) {
-    .main {
-      padding: 15px; } }
-
-.product {
-  flex-basis: 40%; }
-
-.wrap {
-  justify-content: space-between; }
-  @media (max-width: 576px) {
-    .wrap {
-      flex-direction: column-reverse; } }
-
-.offset-top-xs {
-  margin-top: 12px; }
-
-.offset-bottom--xs {
-  margin-bottom: 12px; }
-
-.offset-bottom--xl {
-  margin-bottom: 25px; }
-  @media (max-width: 576px) {
-    .offset-bottom--xl {
-      margin-bottom: 10px; } }
-
-.offset-bottom--sm {
-  margin-bottom: 15px; }
-
-.offset-left--sm {
-  margin-left: 15px; }
-
-.active {
-  display: block !important; }
-
-.open {
-  transform: rotate(180deg); }
-
-p {
-  margin: 0; }
-
-ul {
-  margin: 0;
-  padding: 0; }
-  ul li {
-    padding: 0;
-    margin: 0; }
-
 .card {
   border-radius: 3px;
   border: solid 0.8px #d9d9d9; }
@@ -640,6 +589,7 @@ ul {
     line-height: normal;
     letter-spacing: normal;
     color: #393838;
+    flex: 2;
     margin: 0; }
   .card__headline--sm {
     font-family: "SFProDisplay", "sans-serif";
@@ -687,6 +637,7 @@ ul {
     letter-spacing: normal;
     text-align: right;
     color: #e60c14;
+    flex: 1;
     font-family: "Arial", sans-serif; }
   .card .info__image {
     width: 67px;
@@ -726,6 +677,18 @@ ul {
     letter-spacing: normal;
     color: #393838;
     margin: 0; }
+  .card .price-block--mobile {
+    display: none;
+    margin-bottom: 5px;
+    margin-top: 5px; }
+    @media (max-width: 576px) {
+      .card .price-block--mobile {
+        display: block; } }
+    .card .price-block--mobile .price-block__discount {
+      width: 60px; }
+  @media (max-width: 576px) {
+    .card .price-block--desktop {
+      display: none; } }
   .card .price-block__main {
     font-family: "Arial", sans-serif;
     font-size: 16.7px;
@@ -770,10 +733,17 @@ ul {
   .button--main {
     padding: 9px 16px;
     font-size: 12.2px; }
+    @media (max-width: 414px) {
+      .button--main {
+        width: 100%; } }
   .button--submit {
     padding: 16px 25px;
     font-size: 10.6px;
     font-weight: 500; }
+    @media (max-width: 414px) {
+      .button--submit {
+        width: 100%;
+        margin-bottom: 15px; } }
 
 .product {
   padding: 35px 25px 0 35px; }
@@ -800,7 +770,7 @@ ul {
     border-top: solid 1px #e6e6e6;
     border-bottom: solid 1px #e6e6e6;
     padding: 15px; }
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
       .product .mobile-toggle {
         display: flex; } }
     .product .mobile-toggle__headline {
@@ -956,3 +926,72 @@ ul {
   @media (max-width: 768px) {
     .head .inner-wrap {
       padding-left: 50px; } }
+
+body {
+  background: #fff; }
+
+.main {
+  flex-basis: 60%;
+  padding: 15px 50px 30px 75px;
+  border-right: 1px solid #dfe3e8; }
+  @media (max-width: 992px) {
+    .main {
+      padding: 15px 25px 30px 60px; } }
+  @media (max-width: 768px) {
+    .main {
+      padding: 15px; } }
+
+.product {
+  flex-basis: 40%; }
+
+.wrap {
+  justify-content: space-between; }
+  @media (max-width: 576px) {
+    .wrap {
+      flex-direction: column-reverse; } }
+
+.offset-top-xs {
+  margin-top: 12px; }
+
+.offset-bottom--xs {
+  margin-bottom: 12px; }
+
+.offset-bottom--xl {
+  margin-bottom: 25px; }
+  @media (max-width: 576px) {
+    .offset-bottom--xl {
+      margin-bottom: 10px; } }
+
+.offset-bottom--sm {
+  margin-bottom: 15px; }
+
+.offset-left--sm {
+  margin-left: 15px; }
+
+.offset-left--xxs {
+  margin-left: 5px; }
+
+.offset-top-xxs {
+  margin-top: 5px; }
+
+.offset-bottom-xxs {
+  margin-bottom: 5px; }
+
+.active {
+  display: block !important; }
+
+.open {
+  transform: rotate(180deg); }
+
+.text-left {
+  text-align: left !important; }
+
+p {
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+  ul li {
+    padding: 0;
+    margin: 0; }

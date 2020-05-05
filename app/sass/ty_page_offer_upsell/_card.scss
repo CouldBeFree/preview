@@ -11,6 +11,7 @@
 		line-height: normal;
 		letter-spacing: normal;
 		color: #393838;
+		flex: 2;
 		margin: 0;
 	}
 	
@@ -76,6 +77,7 @@
 		letter-spacing: normal;
 		text-align: right;
 		color: #e60c14;
+		flex: 1;
 		font-family: $main-font;
 	}
 	
@@ -112,8 +114,6 @@
 			color: #424242;
 			padding: 4px;
 			font-family: $main-font;
-			//background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
-			//-webkit-appearance: none;
 		}
 		
 		&__headline--lg {
@@ -130,6 +130,26 @@
 	}
 	
 	.price-block {
+		&--mobile {
+			display: none;
+			margin-bottom: 5px;
+			margin-top: 5px;
+			
+			@media (max-width: 576px) {
+				display: block;
+			}
+			
+			.price-block__discount {
+				width: 60px;
+			}
+		}
+		
+		&--desktop {
+			@media (max-width: 576px) {
+				display: none;
+			}
+		}
+		
 		&__main {
 			font-family: $main-font;
 			font-size: 16.7px;
