@@ -16,7 +16,7 @@
 		margin-bottom: 15px;
 		font-weight: normal;
 		
-		@media (max-width: 576px) {
+		@media (max-width: 992px) {
 			display: none;
 		}
 	}
@@ -48,12 +48,12 @@
 			-webkit-mask-image: url('../../img/TY_tick.svg');
 			mask-image: url('../../img/TY_tick.svg');
 			
-			@media (max-width: 768px) {
+			@media (max-width: 992px) {
 				left: 0;
 			}
 		}
 		
-		@media (max-width: 768px) {
+		@media (max-width: 992px) {
 			padding-left: 50px;
 		}
 	}
