@@ -110,6 +110,21 @@
 		@media (max-width: 992px) {
 			padding-bottom: 15px;
 		}
+		
+		.product-image__label {
+			position: absolute;
+			right: -8px;
+			top: -8px;
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #7f7f7f;
+			font-size: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: #ffffff;
+		}
 	}
 	
 	&__main {
@@ -143,6 +158,7 @@
 			background-color: #ffffff;
 			width: 49px;
 			height: 49px;
+			position: relative;
 		}
 		
 		&__headline {
