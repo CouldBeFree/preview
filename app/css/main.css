@@ -953,6 +953,15 @@ template {
 body {
   background: #fff; }
 
+.svg {
+  width: 40px;
+  height: 40px;
+  fill: red; }
+  .svg svg path {
+    fill: red !important; }
+  .svg svg text {
+    fill: red !important; }
+
 .main {
   flex-basis: 60%;
   padding: 15px 50px 30px 75px;
