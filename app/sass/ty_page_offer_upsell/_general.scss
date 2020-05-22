@@ -69,12 +69,28 @@ body {
 	margin-left: 5px;
 }
 
+.offset-right--xs {
+	margin-right: 10px;
+}
+
 .offset-top-xxs {
 	margin-top: 5px;
 }
 
 .offset-bottom-xxs {
 	margin-bottom: 5px;
+}
+
+.padding-bottom--xl {
+	padding-bottom: 25px;
+}
+
+.padding-top--sm {
+	padding-top: 15px;
+}
+
+.border-bottom {
+	border-bottom: solid 0.5px #d9d9d9;
 }
 
 .active {

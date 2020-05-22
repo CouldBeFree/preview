@@ -10,7 +10,6 @@
 </head>
 <body>
 
-<!--<h1 class="svg">SVG <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#6d7681;}.cls-2{fill:none;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M18.5455,15H5.4545V6h13.091Zm0-10.5H5.4545A1.4821,1.4821,0,0,0,4,6v9a1.4821,1.4821,0,0,0,1.4545,1.5h5.091V18H9.0909v1.5h5.8182V18H13.4545V16.5h5.091A1.4822,1.4822,0,0,0,20,15V6A1.4822,1.4822,0,0,0,18.5455,4.5Z"/><rect class="cls-2" width="24" height="24"/></g></g></svg></h1>-->
 <div class="wrap flex">
     <div class="main" data-product="some value">
         <div class="head offset-bottom--xl">
@@ -27,7 +26,7 @@
             <div class="card__image"></div>
             <div class="card__content">
                 <h4 class="card__headline--sm">Your order is confirmed</h4>
-                <div class="bar" data-width="50"></div>
+                <p class="card__content--item">You’ll receive an email when your order is ready.</p>
             </div>
         </div>
 
@@ -110,12 +109,19 @@
         </div>
 
         <!-- Footer -->
-        <div class="flex flex--between align--center footer">
-            <div class="align--center">
-                <span class="footer__label">Need help?</span>
-                <a href="/" class="footer__link">Contact us</a>
+        <div class="footer">
+            <div class="flex flex--end align--center padding-bottom--xl border-bottom">
+                <div class="align--center">
+                    <span class="footer__label">Need help?</span>
+                    <p class="footer__link">Contact us</p>
+                </div>
             </div>
-            <button class="button button--submit">Continue shopping</button>
+            <div class="flex padding-top--sm padding-bottom--xl">
+                <p class="footer__link offset-right--xs">Refund policy</p>
+                <p class="footer__link offset-right--xs">Shipping policy</p>
+                <p class="footer__link offset-right--xs">Privacy policy</p>
+                <p class="footer__link offset-right--xs">Terms of service</p>
+            </div>
         </div>
 
     </div>
